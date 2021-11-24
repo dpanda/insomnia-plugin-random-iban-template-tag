@@ -1,1 +1,1 @@
-Plugin for [https://insomnia.rest/](Insomnia) providing a Template Tag to generate random iban codes.
+Plugin for [Insomnia](https://insomnia.rest/) providing a Template Tag to generate random iban codes.

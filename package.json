@@ -1,6 +1,6 @@
 {
   "name": "insomnia-plugin-random-iban-template-tag",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "insomnia": {
     "name": "random-iban-template-tag",
@@ -17,5 +17,14 @@
   },
   "scripts": {
     "test": "jest"
+  },
+  "keywords": [
+    "iban",
+    "insomnia",
+    "insomnia-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpanda/insomnia-plugin-random-iban-template-tag.git"
   }
 }

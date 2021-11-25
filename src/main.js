@@ -1,5 +1,5 @@
 const ibanIt = require('./iban_it')
-const ibanGeneric = require('../iban_generic.js')
+const ibanGeneric = require('./iban_generic.js')
 
 module.exports.templateTags = [{
   name: 'randomIban',

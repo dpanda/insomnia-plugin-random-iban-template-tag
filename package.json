@@ -1,6 +1,6 @@
 {
   "name": "insomnia-plugin-random-iban-template-tag",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "insomnia": {
     "name": "random-iban-template-tag",
     "description": ""

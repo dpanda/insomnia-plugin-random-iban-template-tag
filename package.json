@@ -1,9 +1,9 @@
 {
   "name": "insomnia-plugin-random-iban-template-tag",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "insomnia": {
     "name": "random-iban-template-tag",
-    "description": ""
+    "description": "Plugin providing a Template Tag to generate random iban codes."
   },
   "main": "src/main.js",
   "devDependencies": {

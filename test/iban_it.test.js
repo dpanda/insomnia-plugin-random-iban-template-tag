@@ -6,7 +6,7 @@ test('calculate cin code', () => {
 })
 
 test('build full it iban test', () => {
-  expect(ibanIt.buildItIban('08901', '33930', '000000008501')).toBe('IT54I0890133930000000008501')
+  expect(ibanIt.buildItIban('IT', '08901', '33930', '000000008501')).toBe('IT54I0890133930000000008501')
 })
 
 test('random it iban test', () => {

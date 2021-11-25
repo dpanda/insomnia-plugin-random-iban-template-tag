@@ -42,7 +42,8 @@ module.exports.templateTags = [{
     }
   ],
   async run (context, country) {
-    if (country === 'IT' || country === 'SM') return ibanIt.random_it_iban('03069')
-    return ibanGeneric.randomIban(country)
+    if (country === 'IT') return ibanIt.randomItIban('03069')
+    else if (country === 'SM') return ibanIt.randomSmIban('03069')
+    else return ibanGeneric.randomIban(country)
   }
 }]

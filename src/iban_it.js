@@ -5,16 +5,26 @@ const common = require('./common')
 
 const randomItIban = function (bankCode) {
   return buildItIban(
+    'IT',
     bankCode,
     common.randomNumericString(5),
     common.randomNumericString(12)
   )
 }
 
-const buildItIban = function (bankCode, branchCode, account) {
+const randomSmIban = function (bankCode) {
+  return buildItIban(
+    'SM',
+    bankCode,
+    common.randomNumericString(5),
+    common.randomNumericString(12)
+  )
+}
+
+const buildItIban = function (countryCode, bankCode, branchCode, account) {
   const bban = cinCode(bankCode, branchCode, account) + bankCode + branchCode + account
 
-  return 'IT' + common.ibanChecksum(bban, 'IT') + bban
+  return countryCode + common.ibanChecksum(bban, countryCode) + bban
 }
 
 const cinCode = function (bankCode, branchCode, account) {
@@ -39,5 +49,6 @@ const cinCode = function (bankCode, branchCode, account) {
 }
 
 module.exports.randomItIban = randomItIban
+module.exports.randomSmIban = randomSmIban
 module.exports.buildItIban = buildItIban
 module.exports.cinCode = cinCode
